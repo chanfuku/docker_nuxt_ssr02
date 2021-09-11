@@ -8,6 +8,7 @@ $cd docker_nuxt_ssr02/docker/nuxt
 $docker-compose build
 
 $docker-compose run --rm nuxt npx create-nuxt-app
+このプロジェクトでは以下を選択して作成しました。
 ✨  Generating Nuxt.js project in .
 ? Project name: nuxt_app
 ? Programming language: TypeScript
