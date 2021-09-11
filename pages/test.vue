@@ -18,8 +18,9 @@
 </template>
 
 <script lang="ts">
+import Vue from 'vue'
 
-export default {
+export default Vue.extend({
   computed: {
     images (): string[] {
         return this.$store.state.images
@@ -40,7 +41,7 @@ export default {
       this.$router.push('/')
     },
   }
-}
+})
 </script>
 
 <style scoped>

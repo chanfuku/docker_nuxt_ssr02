@@ -10,10 +10,11 @@
 </template>
 
 <script lang="ts">
+import Vue from 'vue'
 
-export default {
+export default Vue.extend({
   async fetch(): Promise<void> {
-    console.log('index.vue')
+    console.log('index.vueです')
   },
   methods: {
     async push(): Promise<void> {
@@ -23,5 +24,5 @@ export default {
       window.location.href = '/test'
     },
   },
-}
+})
 </script>
