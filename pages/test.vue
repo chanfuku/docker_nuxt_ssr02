@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>Nuxt.js Rendering mode: Universal</h1>
     <p>▼SSR(Server Side Renderging)ページ遷移</p>
     <p><a href="/">aタグでトップに戻る</a></p>
     <p><button @click="toTop">window.location.href</button></p>

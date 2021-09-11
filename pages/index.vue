@@ -1,5 +1,6 @@
 <template>
   <div>
+    <h1>Nuxt.js Rendering mode: Universal</h1>
     <p>▼SSR(Server Side Renderging)ページ遷移</p>
     <p><a href="/test">aタグでテストページへ</a></p>
     <p><button @click="next">window.location.hrefでテストページへ</button></p>
