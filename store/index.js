@@ -4,7 +4,7 @@ export const state = () => ({
 
 export const mutations = {
   ADD_IMAGE(state, imgSrc) {
-    state.images.push(imgSrc)
+    state.images.unshift(imgSrc)
   }
 }
 
