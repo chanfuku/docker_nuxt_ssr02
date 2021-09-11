@@ -12,14 +12,14 @@
 <script lang="ts">
 
 export default {
-  fetch() {
+  async fetch(): Promise<void> {
     console.log('index.vue')
   },
   methods: {
-    push() {
+    async push(): Promise<void> {
       this.$router.push('/test')
     },
-    next() {
+    async next(): Promise<void> {
       window.location.href = '/test'
     },
   },

@@ -21,22 +21,22 @@
 
 export default {
   computed: {
-    images () {
+    images (): string[] {
         return this.$store.state.images
     },
   },
-  async fetch() {
+  async fetch(): Promise<void> {
     console.log('test.vueです')
     await this.$store.dispatch('fetchRandomDog')
   },
   methods: {
-    async addDogImage() {
+    async addDogImage(): Promise<void> {
       await this.$fetch()
     },
-    toTop() {
+    async toTop(): Promise<void> {
       window.location.href = '/'
     },
-    push() {
+    async push(): Promise<void> {
       this.$router.push('/')
     },
   }
