@@ -24,32 +24,48 @@ import Vue from 'vue'
 export default Vue.extend({
   computed: {
     images (): string[] {
-        return this.$store.state.images
+      log('computed')
+      return this.$store.state.images
     },
   },
   async fetch(): Promise<void> {
-    console.log('test.vueです')
+    log('fetch')
     await this.$store.dispatch('fetchRandomDog')
+  },
+  async mounted(): Promise<void> {
+    log('mounted')
+    await this.$store.dispatch('fetchRandomCat')
+  },
+  async created(): Promise<void> {
+    log('created')
   },
   methods: {
     async addDogImage(): Promise<void> {
+      log('addDogImage')
       await this.$fetch()
     },
     async toTop(): Promise<void> {
+      log('toTop')
       window.location.href = '/'
     },
     async push(): Promise<void> {
+      log('push')
       this.$router.push('/')
     },
   }
 })
+
+const log = (funcName: string): void => {
+  const str = `${funcName}: client=${process.client} server=${process.server}`
+  console.log(str)
+}
 </script>
 
 <style scoped>
 .loading__img {
   width:30%;
 }
-.imagebox {
-  max-width: 100px;
+.imagebox img {
+  width: 30%;
 }
 </style>
