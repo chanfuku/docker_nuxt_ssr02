@@ -10,7 +10,11 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  transition: 'slide-test',
+  transition: (to, from) => {
+    console.log(to)
+    console.log(from)
+    return 'slide-test'
+  },
 })
 </script>
 
