@@ -7,7 +7,7 @@
     <p>▼SPA(Client Side Renderging)ページ遷移</p>
     <p><NuxtLink to="/test">NuxtLinkでテストページへ</NuxtLink></p>
     <p><button @click="push">$router.pushでテストページへ</button></p>
-    <p><NuxtLink to="/slide">アニメーションのテストページへ</NuxtLink></p>
+    <p><NuxtLink to="/slide1">スライドアニメーションのテストページへ</NuxtLink></p>
   </div>
 </template>
 
