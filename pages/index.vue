@@ -8,6 +8,7 @@
     <p><NuxtLink to="/test">NuxtLinkでテストページへ</NuxtLink></p>
     <p><button @click="push">$router.pushでテストページへ</button></p>
     <p><NuxtLink to="/slide1">スライドアニメーションのテストページへ</NuxtLink></p>
+    <p><NuxtLink to="/canvas">canvasお絵かきページへ</NuxtLink></p>
   </div>
 </template>
 
