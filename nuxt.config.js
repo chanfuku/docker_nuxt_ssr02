@@ -1,4 +1,8 @@
 export default {
+  serverMiddleware: {
+    '/api/mock': '~/api/mock.js',
+  },
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt_app',
