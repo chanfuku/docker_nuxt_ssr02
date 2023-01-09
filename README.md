@@ -12,6 +12,9 @@ $docker-compose up
 http://localhost:9000/
 ```
 
+- demo
+[https://63bb82c942bbfe180191a1cd--whimsical-stardust-556181.netlify.app/](https://63bb82c942bbfe180191a1cd--whimsical-stardust-556181.netlify.app/)
+
 - このプロジェクトは以下の手順で作成しました。
 ```
 $cd docker_nuxt_ssr02/docker/nuxt

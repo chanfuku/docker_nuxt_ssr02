@@ -3,7 +3,7 @@ services:
   nuxt:
     build: ./docker/nuxt
     ports:
-      - 9000:3000
+      - 9000:9000
     volumes:
       - .:/workspace
     working_dir: /workspace
