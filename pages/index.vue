@@ -9,6 +9,7 @@
     <p><button @click="push">$router.pushでテストページへ</button></p>
     <p><NuxtLink to="/slide1">スライドアニメーションのテストページへ</NuxtLink></p>
     <p><NuxtLink to="/canvas">canvasお絵かきページへ</NuxtLink></p>
+    <p><NuxtLink to="/infinite-scroll">無限スクロールページへ</NuxtLink></p>
   </div>
 </template>
 
