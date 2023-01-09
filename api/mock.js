@@ -9,7 +9,7 @@ app.get('/items/:page', (req, res) => {
   })
 })
 
-const items = ({ page, count = 10 }) => {
+const items = ({ page, count = 20 }) => {
   const res = [];
   const start = (page - 1) * count + 1
   const end = page * count
