@@ -1,4 +1,6 @@
 export default {
+  ssr: true,
+  target: 'server',
   serverMiddleware: {
     '/api/mock': '~/api/mock.js',
   },

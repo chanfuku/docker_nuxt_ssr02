@@ -2,6 +2,9 @@ import express from 'express'
 
 const app = express()
 
-app.get('/', (req, res) => res.send('Hello World!'))
+app.get('/items/:page', (req, res) => {
+  const page = req.params.page
+  res.send(page)
+})
 
 export default app
